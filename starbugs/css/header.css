@@ -2,6 +2,9 @@ header {
     height: 120px;
     background-color: #f6f5f0;
     border: 1px solid #c8c8c8;
+    position: fixed;
+    inset: 0;
+    margin-top: 0;
 }
 
 
@@ -128,8 +131,6 @@ header .main-menu .item:hover .item__contents {
     display: block;
 }
 
-header .main-menu .item .item__contents .contents__menu {}
-
 header .main-menu .item .item__contents .contents__menu>ul {
     display: flex;
     padding: 20px 0;
@@ -155,6 +156,10 @@ header .main-menu .item .item__contents .contents__menu>ul>li>ul li {
     cursor: pointer;
 }
 
+header .main-menu .item .item__contents .contents__menu>ul>li>ul li:hover {
+    color: #669900;
+}
+
 header .main-menu .item .item__contents .contents__texture {
     background-color: #000;
     font-size: 12px;
@@ -170,4 +175,17 @@ header .main-menu .item .item__contents .contents__texture h4 {
 header .main-menu .item .item__contents .contents__texture p {
     color: #669900;
     margin: 4px 0 14px;
+}
+
+article.badges {
+    position: fixed;
+    top: 132px;
+    right: 0;
+}
+
+.badges .badge {
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 12px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
 }
