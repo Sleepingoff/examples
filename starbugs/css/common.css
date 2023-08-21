@@ -32,3 +32,62 @@ a {
     margin: 0 auto;
     position: relative;
 }
+
+.btn {
+    width: 130px;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 4px;
+    color: #333;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    transition: .4s;
+}
+
+.btn:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.btn.btn--reverse {
+    background-color: #333;
+    color: #fff;
+}
+
+.btn.btn--reverse:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+.btn.btn--brown {
+    border-color: #592B18;
+    color: #592B18;
+}
+
+.btn.btn--brown:hover {
+    color: #fff;
+    background-color: #592B18;
+}
+
+.btn.btn--gold {
+    border-color: #D9AABA;
+    color: #D9AABA;
+}
+
+.btn.btn--gold:hover {
+    color: #fff;
+    background-color: #D9AABA;
+}
+
+.btn.btn--white {
+    border-color: #fff;
+    color: #fff;
+}
+
+.btn.btn--white:hover {
+    color: #333;
+    background-color: #fff;
+}

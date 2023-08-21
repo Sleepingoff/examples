@@ -39,6 +39,22 @@ window.addEventListener(
   }, 300)
 );
 
+//새로고침시 배너 이미지 순차적으로 나타나기
+const fadeEls = document.querySelectorAll(".visual .fade-in");
+fadeEls.forEach((fadeEl, index) => {
+  gsap.to(fadeEl, 1, {
+    delay: (index + 1) * 0.7,
+    opacity: 1,
+  });
+});
+
+//swiper 초기화 ~ 슬라이드 방향 바꾸기
+const swiper = new Swiper(".notice-line .swiper-container", {
+  direction: "vertical",
+  autoplay: true,
+  loop: true,
+});
+
 // 범위 랜덤 함수(소수점 2자리까지)
 function random(min, max) {
   // `.toFixed()`를 통해 반환된 문자 데이터를,
